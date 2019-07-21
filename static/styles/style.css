@@ -1,0 +1,35 @@
+:root {
+  --color-primary: #349f7d;
+  --color-secondary: #8776db;
+  --color-gray: #2a292a;
+}
+
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+/* background colors */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-gray {
+  background-color: var(--color-gray);
+}
+
+/* text colors */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-gray {
+  color: var(--color-gray);
+}

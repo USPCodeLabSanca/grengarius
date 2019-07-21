@@ -1,0 +1,16 @@
+{
+  "name": "grengarius",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "npm run build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^9.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
