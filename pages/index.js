@@ -12,7 +12,7 @@ const Home = () => (
         <div className='container mx-auto px-4 flex h-screen pt-navbar'>
           <div className='flex flex-col justify-center w-full md:w-1/2 text-center'>
             <div>
-              <img src='/static/images/logo-text.svg' className='w-full' />
+              <img src='/static/images/logo-text.svg' className='w-full' alt="Grengarius Games" />
             </div>
             <div className='text-white text-3xl my-8'>
               Somos um estúdio índie de jogos com foco na diversidade.
@@ -25,6 +25,7 @@ const Home = () => (
             <img
               src='/static/images/logo.png'
               className='w-full'
+              alt="Grengarius Games Logo"
             />
           </div>
         </div>

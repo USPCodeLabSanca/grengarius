@@ -4,7 +4,7 @@ const Navbar = () => (
   <header className='bg-gray fixed top-0 w-screen h-navbar'>
     <div className='flex justify-center md:justify-start container h-full mx-auto'>
       <div className='flex items-center px-4'>
-        <img src='/static/images/logo.png' className='h-10' />
+        <img src='/static/images/logo.png' className='h-10' alt="Grengarius Games Logo" />
         <div className='text-4xl font-bold px-2'>
           <span className='text-secondary'>G</span>
           <span className='text-primary'>G</span>
