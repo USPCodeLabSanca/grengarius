@@ -17,13 +17,13 @@ const Home = () => (
             <div className='text-white text-3xl my-8'>
               Somos um estúdio índie de jogos com foco na diversidade.
             </div>
-            <button className='bg-white hover:bg-gray-300 text-gray text-4xl mx-8 font-bold py-2 px-4 rounded'>
+            <button className='gradient-index-button text-gray text-4xl mx-8 font-bold py-2 px-4 rounded'>
               Saiba mais
             </button>
           </div>
           <div className='hidden md:flex flex-col justify-center w-1/2 p-8'>
             <img
-              src='/static/images/logo.png'
+              src='/static/images/logo.svg'
               className='w-full'
               alt="Grengarius Games Logo"
             />
