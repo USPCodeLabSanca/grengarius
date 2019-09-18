@@ -80,7 +80,7 @@ export default function(){
       <main className="w-full">
         <div className="mx-10 h-full bg-white">
           <h1 className="text-5xl">Equipe</h1>
-          <ul className="flex flex-wrap p-10">
+          <ul className="flex flex-wrap justify-center p-10">
             {
               people.map((elem, index) => (
                 <li key={index} className="mx-12 my-4">
@@ -100,6 +100,9 @@ export default function(){
           min-height: 100%;
           height: max-content;
           background: url(../static/images/background.jpg);
+        }
+        main > div {
+          min-height: calc(100vh - 58px);
         }
         h1 {
           text-align: center;

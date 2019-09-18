@@ -10,11 +10,11 @@ export default function() {
       <Head/>
       <Navbar/>
       <main className="w-full" style={{background: "url(../static/images/background.jpg)"}}>
-        <div className="mx-10 h-full flex flex-col items-center justify-center content-center bg-white">
+        <div className="mx-10 h-full flex flex-col items-center bg-white">
           <span className="flex justify-center">
             <h1 className="text-center text-5xl border-b-4">Contato</h1>
           </span>
-          <form className="flex flex-col m-4 max-w-lg w-4/5">
+          <form className="flex flex-col h-full justify-around m-4 max-w-2xl w-4/5">
             <label htmlFor="email">Seu email</label>
             <input name="email" type="email" placeholder="Seu email"/>
 
@@ -42,9 +42,10 @@ export default function() {
           border: 0px solid black;
           padding: 0.5rem;
           border-radius: 4px;
+          font-size: 30px;
           border-bottom-width: 1px;
         }
-        input:focus {
+        input:focus, textarea:focus {
           outline: 0;
         }
         label {

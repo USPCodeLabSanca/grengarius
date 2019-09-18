@@ -9,49 +9,29 @@ function ProjectCard({
   imageURL,
 }){
   return (
-    <div className="root">
-      <div className="image-container">
-        <img src={imageURL} width="442" height="346"/>
-      </div>
-      <div className="text-container">
-        <h2 className="title">
+    <div className="root flex w-full justify-center">
+        <img src={imageURL} width="221" height="173"/>
+      <div className="text-container flex flex-col w-full ml-4">
+        <h2 className="title text-center border-b-2 border-t-2">
           {title}
         </h2>
-        <p className="description">{description}</p>
+        <p className="description p-1 border-b-2 h-full">{description}</p>
       </div>
       <style jsx>{`
-        .root {
-          display: flex;
-          width: 100%;
-          justify-content: center;
-        }
         .image-container {
           width: "70%";
           height: "auto";
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .text-container {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          margin-left: 1rem;
         }
         .title {
-          border: 2px solid #9695D1;
-          border-left-width: 0;
-          border-right-width: 0;
+          border-color: #9695D1;
           font-size: 30px;
-          text-align: center;
         }
         .description {
           font-size: 20px;
-          padding: 1rem;
           border-color: #9695D1;
-          border-bottom-width: 2px;
-          height: 100%;
           min-height: 10rem;
+          max-height: 116px;
+          overflow-y: auto;
         }
         @media (max-width: 768px) {
           .root {
@@ -78,17 +58,17 @@ export default function Projetos(){
   const [projects, setProjects] = React.useState([
     {
       title: "Falling star",
-      description: "lorem ipsum",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida lorem. Nulla facilisi. Etiam luctus magna a orci iaculis, sit amet fringilla purus tristique. Pellentesque bibendum dignissim orci. Mauris nibh odio, rutrum quis mauris in, feugiat egestas odio. Sed id tincidunt tortor. Vestibulum eu mattis erat, pulvinar commodo lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida lorem. Nulla facilisi. Etiam luctus magna a orci iaculis, sit amet fringilla purus tristique. Pellentesque bibendum dignissim orci. Mauris nibh odio, rutrum quis mauris in, feugiat egestas odio. Sed id tincidunt tortor. Vestibulum eu mattis erat, pulvinar commodo lacus.",
       imageURL: "http://place-puppy.com/442x346",
     },
     {
       title: "Falling star",
-      description: "lorem ipsum",
+      description: "asdasdadads",
       imageURL: "http://place-puppy.com/442x346",
     },
     {
       title: "Falling star",
-      description: "lorem ipsum",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida lorem. Nulla facilisi. Etiam luctus magna a orci iaculis, sit amet fringilla purus tristique. Pellentesque bibendum dignissim orci. Mauris nibh odio, rutrum quis mauris in, feugiat egestas odio. Sed id tincidunt tortor. Vestibulum eu mattis erat, pulvinar commodo lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida lorem. Nulla facilisi. Etiam luctus magna a orci iaculis, sit amet fringilla purus tristique. Pellentesque bibendum dignissim orci. Mauris nibh odio, rutrum quis mauris in, feugiat egestas odio. Sed id tincidunt tortor. Vestibulum eu mattis erat, pulvinar commodo lacus.",
       imageURL: "http://place-puppy.com/442x346",
     },
   ]);

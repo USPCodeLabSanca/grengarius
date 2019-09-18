@@ -7,7 +7,7 @@ export default function() {
     <>
       <Head/>
       <Navbar/>
-      <h1>Portfolio!</h1>
+      <h1>Faltou o mockup do portfolio! D:</h1>
     </>
   );
 }
