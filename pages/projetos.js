@@ -6,7 +6,7 @@ import { useFullHeightOnNextDiv } from '../shared/full-height';
 function ProjectCard({
   title,
   description,
-  imageURL,
+  imageURL = "http://place-puppy.com/442x346",
 }){
   return (
     <div className="root flex w-full justify-center">
