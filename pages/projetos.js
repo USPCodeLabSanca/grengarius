@@ -10,6 +10,15 @@ function ProjectCard({
 }){
   return (
     <div className="root">
+      <div className="image-container">
+        <img src={imageURL} width="442" height="346"/>
+      </div>
+      <div className="text-container">
+        <h2 className="title">
+          {title}
+        </h2>
+        <p className="description">{description}</p>
+      </div>
       <style jsx>{`
         .root {
           display: flex;
@@ -60,16 +69,6 @@ function ProjectCard({
           }
         }
       `}</style>
-
-      <div className="image-container">
-        <img src={imageURL} width="442" height="346"/>
-      </div>
-      <div className="text-container">
-        <h2 className="title">
-          {title}
-        </h2>
-        <p className="description">{description}</p>
-      </div>
     </div>
   );
 }
@@ -104,10 +103,10 @@ export default function Projetos(){
           minHeight: "100%",
           height: "max-content",
         }}
-        className="overflow-y-scroll w-full"
+        className="w-full"
       >
         <div className="mx-10 bg-white h-full">
-          <h1 className="text-5xl text-center font-bold">Projetos</h1>
+          <h1 className="text-5xl text-center">Projetos</h1>
           <ul className="p-8">
             {
               projects.map((elem, index) =>
