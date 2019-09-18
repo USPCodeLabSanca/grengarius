@@ -1,0 +1,69 @@
+<svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+	<style>
+		path{
+			fill: none;
+			stroke: #359E7D;
+			stroke-width: 0.1;
+			stroke-linecap: round;
+			transition: 0.5s;
+		}
+		#bottom-path, #top-path {
+			stroke-dasharray: 0.7 100;
+			stroke-dashoffset: 0;
+			stroke-dasharray: 0.7 100;
+			stroke-dashoffset: -0.15;
+			transition-timing-function: cubic-bezier(0.25, -0.25, 0.75, 1.25), cubic-bezier(0.25, -0.25, 0.75, 1.25);
+		}
+		#middle-path{
+			transition-timing-function: linear;
+		}
+	</style>
+	<path d="
+		M 0 0.25
+		L 0.15 0.25
+		h 0.7
+		a 0.25 0.1 90 1 1 0 0.5
+		L 0 0.14285714285
+	" id="top-path"/>
+	<path d="
+		M 0.15 0.5
+		h 0.7
+	" id="middle-path"/>
+	<path d="
+		M 0 0.75
+		L 0.15 0.75
+		h 0.7
+		a 0.25 0.1 90 1 0 0 -0.5
+		L 0 0.85714285714
+	" id="bottom-path"/>
+	<script>
+		const topPath = document.querySelector("svg #top-path");
+		const bottomPath = document.querySelector("svg #bottom-path");
+		const middlePath = document.querySelector("svg #middle-path");
+		const svg = topPath.parentElement;
+
+		function startPosition(){
+			middlePath.style.strokeDasharray = "0.7 100";
+			middlePath.style.strokeDashoffset = "0";
+			topPath.style.strokeDasharray = bottomPath.style.strokeDasharray = "0.7 100";
+			topPath.style.strokeDashoffset = bottomPath.style.strokeDashoffset = "-0.15";
+		}
+
+		function endPosition(){
+			middlePath.style.strokeDasharray = "0 100";
+			middlePath.style.strokeDashoffset = "-0.35";
+			topPath.style.strokeDasharray = bottomPath.style.strokeDasharray = "0.8602325267 100";
+			topPath.style.strokeDashoffset = bottomPath.style.strokeDashoffset = "-1.42540928658";
+		}
+
+		startPosition();
+		let state = true;
+		svg.addEventListener("click", ()=>{
+			if(state = !state){
+				startPosition();
+			} else {
+				endPosition();
+			}
+		});
+	</script>
+</svg>
