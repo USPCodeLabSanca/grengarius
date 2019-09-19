@@ -1,8 +1,8 @@
 import React from "react";
 
-import Head from "../shared/components/head";
-import Navbar from "../shared/components/navbar";
-import { useFullHeightOnNextDiv } from "../shared/full-height";
+import Head from "./head";
+import Navbar from "./navbar";
+import { useFullHeightOnNextDiv } from "../full-height";
 
 function PortraitSVG({width, height}){
   return (
@@ -75,26 +75,22 @@ export default function(){
   ]);
   return (
     <>
-      <Head/>
-      <Navbar/>
-      <main className="w-full">
-        <div className="mx-10 h-full bg-white">
-          <h1 className="text-5xl">Equipe</h1>
-          <ul className="flex flex-wrap justify-center p-10">
-            {
-              people.map((elem, index) => (
-                <li key={index} className="mx-12 my-4">
-                  <PersonCard
-                    description={elem.description}
-                    name={elem.name}
-                    borderColor={index%2? "#6FB1A5" : "#8B7BDC"}
-                  />
-                </li>
-              ))
-            }
-          </ul>
-        </div>
-      </main>
+      <div className="mx-10 px-16 py-12 h-full bg-white">
+        <h1 className="text-5xl">Equipe</h1>
+        <ul className="flex flex-wrap justify-center">
+          {
+            people.map((elem, index) => (
+              <li key={index} className="mx-12 my-4">
+                <PersonCard
+                  description={elem.description}
+                  name={elem.name}
+                  borderColor={index%2? "#6FB1A5" : "#8B7BDC"}
+                />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
       <style jsx>{`
         main {
           min-height: 100%;

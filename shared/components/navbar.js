@@ -15,10 +15,10 @@ export default function Navbar(){
         <span className='hidden md:block flex-grow' />
         <ul className='hidden md:flex items-center text-secondary text-2xl'>
           <li className='px-4'><Link href="/portfolio"><a>Portfólio</a></Link></li>
-          <li className='px-4'><Link href="/projetos"><a>Projetos</a></Link></li>
-          <li className='px-4'><Link href="/contato"><a>Contato</a></Link></li>
-          <li className='px-4'><Link href="/team"><a>Equipe</a></Link></li>
-          <li className='px-4'><Link href="/about"><a>Sobre nós</a></Link></li>
+          {/* <li className='px-4'><Link href="/projetos"><a>Projetos</a></Link></li> */}
+          {/* <li className='px-4'><Link href="/contato"><a>Contato</a></Link></li> */}
+          {/* <li className='px-4'><Link href="/team"><a>Equipe</a></Link></li> */}
+          {/* <li className='px-4'><Link href="/about"><a>Sobre nós</a></Link></li> */}
           <li className='px-4'><Link href="/blog"><a>Blog</a></Link></li>
         </ul>
         <div className="block md:hidden"> {/*Hamburguer!*/}

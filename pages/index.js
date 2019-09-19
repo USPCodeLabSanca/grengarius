@@ -5,6 +5,7 @@ import Navbar from '../shared/components/navbar';
 import About from "../shared/components/about";
 import Projetos from "../shared/components/projetos";
 import Contato from "../shared/components/contato";
+import Team from "../shared/components/team";
 
 function Home(){
   return (
@@ -57,6 +58,7 @@ export default function(){
       <main className="flex flex-col">
         <Home/>
         <span><About/></span>
+        <span><Team/></span>
         <span><Projetos/></span>
         <span><Contato/></span>
       </main>
