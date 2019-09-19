@@ -7,10 +7,6 @@ class MyDocument extends Document {
     return { ...initialProps };
   }
 
-  componentDidMount(){
-    console.log(document.getElementById("__next"));
-  }
-
   render() {
     return (
       <Html lang='pt-br' className="h-full">

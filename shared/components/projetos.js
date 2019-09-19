@@ -6,7 +6,7 @@ import { useFullHeightOnNextDiv } from '../full-height';
 function ProjectCard({
   title,
   description,
-  imageURL = "http://place-puppy.com/442x346",
+  imageURL = "https://via.placeholder.com/442x346",
 }){
   return (
     <div className="root flex w-full justify-center">
@@ -59,17 +59,17 @@ export default function Projetos(){
     {
       title: "Falling star",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida lorem. Nulla facilisi. Etiam luctus magna a orci iaculis, sit amet fringilla purus tristique. Pellentesque bibendum dignissim orci. Mauris nibh odio, rutrum quis mauris in, feugiat egestas odio. Sed id tincidunt tortor. Vestibulum eu mattis erat, pulvinar commodo lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida lorem. Nulla facilisi. Etiam luctus magna a orci iaculis, sit amet fringilla purus tristique. Pellentesque bibendum dignissim orci. Mauris nibh odio, rutrum quis mauris in, feugiat egestas odio. Sed id tincidunt tortor. Vestibulum eu mattis erat, pulvinar commodo lacus.",
-      imageURL: "http://place-puppy.com/442x346",
+      imageURL: "https://via.placeholder.com/442x346",
     },
     {
       title: "Falling star",
       description: "asdasdadads",
-      imageURL: "http://place-puppy.com/442x346",
+      imageURL: "https://via.placeholder.com/442x346",
     },
     {
       title: "Falling star",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida lorem. Nulla facilisi. Etiam luctus magna a orci iaculis, sit amet fringilla purus tristique. Pellentesque bibendum dignissim orci. Mauris nibh odio, rutrum quis mauris in, feugiat egestas odio. Sed id tincidunt tortor. Vestibulum eu mattis erat, pulvinar commodo lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida lorem. Nulla facilisi. Etiam luctus magna a orci iaculis, sit amet fringilla purus tristique. Pellentesque bibendum dignissim orci. Mauris nibh odio, rutrum quis mauris in, feugiat egestas odio. Sed id tincidunt tortor. Vestibulum eu mattis erat, pulvinar commodo lacus.",
-      imageURL: "http://place-puppy.com/442x346",
+      imageURL: "https://via.placeholder.com/442x346",
     },
   ]);
 

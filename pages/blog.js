@@ -7,7 +7,7 @@ import { useFullHeightOnNextDiv } from "../shared/full-height";
 function InfoCard({
   name,
   description,
-  imgURL = "http://place-puppy.com/442x346",
+  imgURL = "https://via.placeholder.com/442x346",
   borderColor = "#6FB1A5"
 }){
   return (
