@@ -1,7 +1,7 @@
 import React from "react";
-import Head from "../shared/components/head";
-import Navbar from "../shared/components/navbar";
-import { useFullHeightOnNextDiv } from '../shared/full-height';
+import Head from "./head";
+import Navbar from "./navbar";
+import { useFullHeightOnNextDiv } from '../full-height';
 
 function ProjectCard({
   title,
@@ -75,30 +75,19 @@ export default function Projetos(){
 
   return (
     <>
-      <Head/>
-      <Navbar/>
-      <main
-        style={{
-          background: "url(../static/images/background.jpg)",
-          minHeight: "100%",
-          height: "max-content",
-        }}
-        className="w-full"
-      >
-        <div className="mx-10 bg-white h-full">
-          <h1 className="text-5xl text-center">Projetos</h1>
-          <ul className="p-8">
-            {
-              projects.map((elem, index) =>
-              <li key={index} className="py-5"><ProjectCard
-                title={elem.title}
-                imageURL={elem.imageURL}
-                description={elem.description}
-              /></li>)
-            }
-          </ul>
-        </div>
-      </main>
+      <div className="mx-10 bg-white h-full px-16 py-12">
+        <h1 className="text-5xl text-center">Projetos</h1>
+        <ul>
+          {
+            projects.map((elem, index) =>
+            <li key={index} className="py-5"><ProjectCard
+              title={elem.title}
+              imageURL={elem.imageURL}
+              description={elem.description}
+            /></li>)
+          }
+        </ul>
+      </div>
     </>
   );
 }

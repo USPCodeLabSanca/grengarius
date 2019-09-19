@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Navbar(){
   return (
-    <header className='bg-gray top-0 w-full h-navbar'>
+    <header className='bg-gray sticky top-0 w-full h-navbar'>
       <div className='flex justify-between mx-2 md:mx-0 md:justify-start h-full'>
         <div><Link href="/index"><a className='flex items-center px-4'>
           <img src='/static/images/logo-navbar.svg' className='h-10' alt="Grengarius Games Logo" />
