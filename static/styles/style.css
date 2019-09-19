@@ -33,3 +33,7 @@ body {
 .text-gray {
   color: var(--color-gray);
 }
+
+.gradient-index-button{
+  background: linear-gradient(90deg, #D0C8F2, white, #C4E2DC);
+}

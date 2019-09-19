@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import React from "react";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -8,9 +9,9 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='pt-br'>
+      <Html lang='pt-br' className="h-full">
         <Head />
-        <body>
+        <body className="h-full">
           <Main />
           <NextScript />
         </body>

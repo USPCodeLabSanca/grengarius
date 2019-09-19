@@ -1,28 +1,35 @@
 import React from 'react';
+import Link from 'next/link';
 
-const Navbar = () => (
-  <header className='bg-gray fixed top-0 w-screen h-navbar'>
-    <div className='flex justify-center md:justify-start container h-full mx-auto'>
-      <div className='flex items-center px-4'>
-        <img src='/static/images/logo.png' className='h-10' alt="Grengarius Games Logo" />
-        <div className='text-4xl font-bold px-2'>
-          <span className='text-secondary'>G</span>
-          <span className='text-primary'>G</span>
+export default function Navbar(){
+  return (
+    <header className='bg-gray sticky top-0 w-full h-navbar'>
+      <div className='flex justify-between mx-2 md:mx-0 md:justify-start h-full'>
+        <div><Link href="/index"><a className='flex items-center px-4'>
+          <img src='/static/images/logo-navbar.svg' className='h-10' alt="Grengarius Games Logo" />
+          <div className='text-4xl font-bold px-2'>
+            <span className='text-secondary'>G</span>
+            <span className='text-primary'>G</span>
+          </div>
+        </a></Link></div>
+        <span className='hidden md:block flex-grow' />
+        <ul className='hidden md:flex items-center text-secondary text-2xl'>
+          <li className='px-4'><Link href="/portfolio"><a>Portfólio</a></Link></li>
+          <li className='px-4'><Link href="/projetos"><a>Projetos</a></Link></li>
+          <li className='px-4'><Link href="/contato"><a>Contato</a></Link></li>
+          <li className='px-4'><Link href="/team"><a>Equipe</a></Link></li>
+          <li className='px-4'><Link href="/about"><a>Sobre nós</a></Link></li>
+          <li className='px-4'><Link href="/blog"><a>Blog</a></Link></li>
+        </ul>
+        <div className="block md:hidden"> {/*Hamburguer!*/}
+          <object data="/static/images/hamburguer.svg" width="50" height="50"/>
         </div>
       </div>
-      <span className='hidden md:block flex-grow' />
-      <ul className='hidden md:flex items-center text-secondary text-2xl'>
-        <li className='px-4'>Portfólio</li>
-        <li className='px-4'>Projetos</li>
-        <li className='px-4'>Contato</li>
-      </ul>
-    </div>
-    <style jsx>{`
-      .h-navbar {
-        height: 58px;
-      }
-    `}</style>
-  </header>
-);
-
-export default Navbar;
+      <style jsx>{`
+        .h-navbar {
+          height: 58px;
+        }
+      `}</style>
+    </header>
+  );
+}
