@@ -3,22 +3,21 @@ import React from 'react';
 import Head from '../shared/components/head';
 import Navbar from '../shared/components/navbar';
 import About from "../shared/components/about";
-import Projetos from "../shared/components/projetos";
 import Contato from "../shared/components/contato";
 import Team from "../shared/components/team";
 
 function Home(){
   return (
-    <div className='root bg-cover bg-center h-full bg-image'>
-      <div className='container mx-auto px-4 flex h-full pt-navbar'>
+    <div className='root flex items-center bg-cover bg-center h-full bg-image'>
+      <div className='container mx-auto px-4 sm:px-6 md:px-16 py-8 flex h-full pt-navbar'>
         <div className='flex flex-col justify-center w-full md:w-1/2 text-center'>
           <div>
             <img src='/static/images/logo-text.svg' className='w-full' alt="Grengarius Games" />
           </div>
-          <div className='text-white text-3xl my-8'>
+          <div className='text-lg md:text-2xl lg:text-4xl text-white my-6'>
             Somos um estúdio índie de jogos com foco na diversidade.
           </div>
-          <button className='gradient-index-button text-gray text-4xl mx-8 font-bold py-2 px-4 rounded'>
+          <button className='text-normal md:text-lg lg:text-4xl gradient-index-button text-gray  mt-4 mx-16 font-bold py-2 px-4 rounded'>
             Saiba mais
           </button>
         </div>
@@ -57,10 +56,11 @@ export default function(){
       <Navbar/>
       <main className="flex flex-col">
         <Home/>
-        <span><About/></span>
-        <span><Team/></span>
-        <span><Projetos/></span>
-        <span><Contato/></span>
+        <div className="mb-16 mx-0 sm:mx-2 md:mx-16 px-4 sm:px-6 md:px-16 bg-white">
+          <About/>
+          <Team/>
+          <Contato/>
+        </div>
       </main>
       <style jsx>{`
       `}</style>
