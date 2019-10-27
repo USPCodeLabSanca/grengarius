@@ -2,17 +2,21 @@ import React from 'react';
 
 import Head from '../shared/components/head';
 import Navbar from '../shared/components/navbar';
-import About from "../shared/components/about";
-import Contato from "../shared/components/contato";
-import Team from "../shared/components/team";
+import About from '../shared/components/about';
+import Contato from '../shared/components/contato';
+import Team from '../shared/components/team';
 
-function Home(){
+function Home() {
   return (
     <div className='root flex items-center bg-cover bg-center h-full bg-image'>
       <div className='container mx-auto px-4 sm:px-6 md:px-16 py-8 flex h-full pt-navbar'>
         <div className='flex flex-col justify-center w-full md:w-1/2 text-center'>
           <div>
-            <img src='/static/images/logo-text.svg' className='w-full' alt="Grengarius Games" />
+            <img
+              src='/static/images/logo-text.svg'
+              className='w-full'
+              alt='Grengarius Games'
+            />
           </div>
           <div className='text-lg md:text-2xl lg:text-4xl text-white my-6'>
             Somos um estúdio índie de jogos com foco na diversidade.
@@ -25,7 +29,7 @@ function Home(){
           <img
             src='/static/images/logo.svg'
             className='w-full'
-            alt="Grengarius Games Logo"
+            alt='Grengarius Games Logo'
           />
         </div>
       </div>
@@ -45,24 +49,25 @@ function Home(){
   );
 }
 
-export default function(){
-  React.useEffect(()=>{
-    document.getElementById("__next").style.background = "url(/static/images/background.jpg)";
-  }, []);
-
+export default function() {
   return (
     <>
-      <Head/>
-      <Navbar/>
-      <main className="flex flex-col">
-        <Home/>
-        <div className="mb-16 mx-0 sm:mx-2 md:mx-16 px-4 sm:px-6 md:px-16 bg-white">
-          <About/>
-          <Team/>
-          <Contato/>
+      <Head />
+      <Navbar />
+      <main>
+        <Home />
+        <div className='bg-cover bg-center bg-image py-16 px-0 sm:px-2 md:px-16'>
+          <div className='px-4 sm:px-6 md:px-16 bg-white'>
+            <About />
+            <Team />
+            <Contato />
+          </div>
         </div>
       </main>
       <style jsx>{`
+        .bg-image {
+          background-image: url(/static/images/side.jpg);
+        }
       `}</style>
     </>
   );
