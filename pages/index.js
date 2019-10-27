@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Head from '../shared/components/head';
 import Navbar from '../shared/components/navbar';
 import About from '../shared/components/about';
 import Contato from '../shared/components/contato';
@@ -52,7 +51,6 @@ function Home() {
 export default function() {
   return (
     <>
-      <Head />
       <Navbar />
       <main>
         <Home />

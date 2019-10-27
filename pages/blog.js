@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Head from '../shared/components/head';
 import Navbar from '../shared/components/navbar';
 import { useFullHeightOnNextDiv } from '../shared/full-height';
 
@@ -65,7 +64,6 @@ export default function() {
   ]);
   return (
     <>
-      <Head />
       <Navbar />
       <main className='py-16'>
         <div className='mx-0 sm:mx-2 md:mx-16 px-4 sm:px-6 md:px-16 bg-white'>

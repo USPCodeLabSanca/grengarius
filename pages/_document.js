@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import MyHead from "../shared/components/head";
 import React from "react";
 
 class MyDocument extends Document {
@@ -10,7 +11,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang='pt-br' className="h-full">
-        <Head />
+        <Head>
+          <MyHead/>
+        </Head>
         <body className="h-full">
           <Main />
           <NextScript />
