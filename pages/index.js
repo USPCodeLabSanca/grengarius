@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Navbar from '../shared/components/navbar';
 import About from '../shared/components/about';
 import Contato from '../shared/components/contato';
 import Team from '../shared/components/team';
@@ -51,7 +50,6 @@ function Home() {
 export default function() {
   return (
     <>
-      <Navbar />
       <main>
         <Home />
         <div className='bg-cover bg-center bg-image py-16 px-0 sm:px-2 md:px-16'>
