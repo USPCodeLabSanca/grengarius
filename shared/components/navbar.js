@@ -75,7 +75,7 @@ function NavbarSlider({isOpen = false, onRequestClose = (()=>{})}){
 }
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = React.useState(true);
+  const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <header className='bg-gray sticky top-0 shadow-md h-navbar'>
