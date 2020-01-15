@@ -26,7 +26,7 @@ export default function() {
           />
 
           <button
-            className='w-full my-8 py-2 font-bold text-white rounded-lg text-4xl'
+            className='w-full my-8 font-bold text-white rounded-lg text-3xl'
             type='submit'
           >
             Enviar
