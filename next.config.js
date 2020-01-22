@@ -1,4 +1,4 @@
-const withOffline = require('next-offline')
+const withOffline = require('next-offline');
 
 module.exports = withOffline({
 	globPatterns: ['static/**/*'],

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import { useFullHeightOnNextDiv } from '../full-height';
+import useFullHeightOnNextDiv from '../full-height'
 
 function PortraitSVG({ width, height }) {
   return (
@@ -24,7 +24,7 @@ function PortraitSVG({ width, height }) {
       '
       />
     </svg>
-  );
+  )
 }
 
 function InfoCard({
@@ -52,11 +52,11 @@ function InfoCard({
         }
       `}</style>
     </div>
-  );
+  )
 }
 
 export default function() {
-  useFullHeightOnNextDiv();
+  useFullHeightOnNextDiv()
   return (
     <>
       <div className='flex flex-col items-center w-full pt-16'>
@@ -116,5 +116,5 @@ export default function() {
         }
       `}</style>
     </>
-  );
+  )
 }
