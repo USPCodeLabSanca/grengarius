@@ -1,8 +1,9 @@
-import React from 'react';
-import HeadNext from 'next/head';
+import React from 'react'
 
-const Head = props => (
-  <HeadNext>
+import Head from 'next/head'
+
+const MyHead = props => (
+  <Head>
     <meta charSet='UTF-8' />
     <title>Grengarius Games</title>
     <meta
@@ -44,7 +45,7 @@ const Head = props => (
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <link rel='stylesheet' href='/static/styles/tailwind.min.css' />
     <link rel='stylesheet' href='/static/styles/style.css' />
-  </HeadNext>
-);
+  </Head>
+)
 
-export default Head;
+export default MyHead

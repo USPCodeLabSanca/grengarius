@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import { useFullHeightOnNextDiv } from '../full-height';
+import useFullHeightOnNextDiv from '../full-height'
 
 function PortraitSVG({ width, height }) {
   return (
@@ -24,7 +24,7 @@ function PortraitSVG({ width, height }) {
       '
       />
     </svg>
-  );
+  )
 }
 
 function PersonCard({ name, description, borderColor = '#6FB1A5' }) {
@@ -44,11 +44,11 @@ function PersonCard({ name, description, borderColor = '#6FB1A5' }) {
         }
       `}</style>
     </div>
-  );
+  )
 }
 
 export default function() {
-  useFullHeightOnNextDiv();
+  useFullHeightOnNextDiv()
   const [people, setPeople] = React.useState([
     {
       name: 'joao pedro',
@@ -78,10 +78,10 @@ export default function() {
       name: 'joao pedro',
       description: 'lorem ipsum lorem ipsum'
     }
-  ]);
+  ])
   return (
     <>
-      <div className='flex flex-col items-center w-full py-16'>        
+      <div className='flex flex-col items-center w-full py-16'>
         <h1 className='text-4xl mb-8 py-2 border-b-4'>Equipe</h1>
         <ul className='flex flex-wrap justify-center'>
           {people.map((elem, index) => (
@@ -110,5 +110,5 @@ export default function() {
         }
       `}</style>
     </>
-  );
+  )
 }

@@ -1,14 +1,17 @@
-import React from "react";
-import App from "next/app";
+import React from 'react'
 
-import Navbar from "../shared/components/navbar";
+import App from 'next/app'
 
-export default class MyApp extends App{
-  render(){
-    const { Component, pageProps } = this.props;
-    return ( <>
-      <Navbar/>
-      <Component {...pageProps}/>
-    </>);
+import Navbar from '../shared/components/navbar'
+
+export default class MyApp extends App {
+  render() {
+    const { Component, pageProps } = this.props
+    return (
+      <>
+        <Navbar />
+        <Component {...pageProps} />
+      </>
+    )
   }
 }

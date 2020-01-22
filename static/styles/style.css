@@ -34,6 +34,6 @@ body {
   color: var(--color-gray);
 }
 
-.gradient-index-button{
-  background: linear-gradient(90deg, #D0C8F2, white, #C4E2DC);
+.gradient-index-button {
+  background: linear-gradient(90deg, #d0c8f2, white, #c4e2dc);
 }

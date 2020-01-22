@@ -1,8 +1,9 @@
-import React from 'react';
-import { useFullHeightOnNextDiv } from '../full-height';
+import React from 'react'
+
+import useFullHeightOnNextDiv from '../full-height'
 
 export default function() {
-  useFullHeightOnNextDiv();
+  useFullHeightOnNextDiv()
   return (
     <>
       <div className='flex flex-col items-center w-full pb-16'>
@@ -59,5 +60,5 @@ export default function() {
         }
       `}</style>
     </>
-  );
+  )
 }

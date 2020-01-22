@@ -1,5 +1,6 @@
-import React from 'react';
-import { useFullHeightOnNextDiv } from '../full-height';
+import React from 'react'
+
+import useFullHeightOnNextDiv from '../full-height'
 
 function ProjectCard({
   title,
@@ -46,11 +47,11 @@ function ProjectCard({
         }
       `}</style>
     </div>
-  );
+  )
 }
 
 export default function Projetos() {
-  useFullHeightOnNextDiv();
+  useFullHeightOnNextDiv()
   const [projects, setProjects] = React.useState([
     {
       title: 'Falling star',
@@ -69,7 +70,7 @@ export default function Projetos() {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida lorem. Nulla facilisi. Etiam luctus magna a orci iaculis, sit amet fringilla purus tristique. Pellentesque bibendum dignissim orci. Mauris nibh odio, rutrum quis mauris in, feugiat egestas odio. Sed id tincidunt tortor. Vestibulum eu mattis erat, pulvinar commodo lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida lorem. Nulla facilisi. Etiam luctus magna a orci iaculis, sit amet fringilla purus tristique. Pellentesque bibendum dignissim orci. Mauris nibh odio, rutrum quis mauris in, feugiat egestas odio. Sed id tincidunt tortor. Vestibulum eu mattis erat, pulvinar commodo lacus.',
       imageURL: 'https://via.placeholder.com/442x346'
     }
-  ]);
+  ])
 
   return (
     <>
@@ -88,5 +89,5 @@ export default function Projetos() {
         </ul>
       </div>
     </>
-  );
+  )
 }

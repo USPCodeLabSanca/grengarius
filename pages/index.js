@@ -1,8 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import About from '../shared/components/about';
-import Contato from '../shared/components/contato';
-import Team from '../shared/components/team';
+import Head from '../shared/components/head'
+import About from '../shared/components/about'
+import Contato from '../shared/components/contato'
+import Team from '../shared/components/team'
 
 function Home() {
   return (
@@ -44,12 +45,13 @@ function Home() {
         }
       `}</style>
     </div>
-  );
+  )
 }
 
 export default function() {
   return (
     <>
+      <Head />
       <main>
         <Home />
         <div className='bg-cover bg-center bg-image py-16 px-0 sm:px-2 md:px-16'>
@@ -66,5 +68,5 @@ export default function() {
         }
       `}</style>
     </>
-  );
+  )
 }
