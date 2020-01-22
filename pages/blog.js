@@ -1,6 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import { useFullHeightOnNextDiv } from '../shared/full-height';
+import Head from '../shared/components/head'
+import useFullHeightOnNextDiv from '../shared/full-height'
 
 function InfoCard({
   name,
@@ -37,11 +38,11 @@ function InfoCard({
         }
       `}</style>
     </div>
-  );
+  )
 }
 
 export default function() {
-  useFullHeightOnNextDiv();
+  useFullHeightOnNextDiv()
   const [articles, setArticles] = React.useState([
     {
       name: 'Nome do artigo',
@@ -60,9 +61,10 @@ export default function() {
       name: 'Nome do artigo',
       description: 'Descrição do artigo'
     }
-  ]);
+  ])
   return (
     <>
+      <Head />
       <main className='py-16'>
         <div className='mx-0 sm:mx-2 md:mx-16 px-4 sm:px-6 md:px-16 bg-white'>
           <div className='py-16'>
@@ -89,5 +91,5 @@ export default function() {
         }
       `}</style>
     </>
-  );
+  )
 }
